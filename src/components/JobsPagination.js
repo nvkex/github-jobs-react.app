@@ -7,7 +7,7 @@ export default function JobsPagination({ page, setPage, hasNextPage }) {
     }
 
     return (
-        <Pagination>
+        <Pagination className="justify-content-center">
             {page !== 1 && <Pagination.Prev onClick={() => adjustPage(-1)} />}
             {page !== 1 && <Pagination.Item onClick={() => setPage(1)}>1</Pagination.Item>}
             {page > 3 && <Pagination.Ellipsis />}
